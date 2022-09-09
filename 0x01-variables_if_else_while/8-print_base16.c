@@ -19,7 +19,7 @@ int main(void)
 		putchar(c1);
 		c1++;
 	}
-	while (c2 <= 101)
+	while (c2 <= 102)
 	{
 		putchar(c2);
 		c2++;
