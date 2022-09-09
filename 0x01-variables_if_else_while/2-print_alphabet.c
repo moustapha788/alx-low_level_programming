@@ -12,7 +12,7 @@ int main(void)
 	char c;
 	/* a = 97 */
 	c = 97;
-	while (c <= 122 /* a=97 */)
+	while (c <= 122 /* z=122 */)
 	{
 		putchar(c);
 		c++;
