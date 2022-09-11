@@ -9,44 +9,38 @@
  */
 int main(void)
 {
-	int n = 48, m;
+	int n = 0, m;
 
 
-	while (n <= 57)
+	while (n <= 99)
 	{
 		m = n;
-		while (m <= 57)
+		while (m <= 99)
 		{
 			if (m != n)
 			{
-				if(n)
-				{
-					putchar(48);	
-				}
-				putchar(n);
-				
+
+				putchar(n / 10 + 48);
+				putchar(n % 10 + 48);
 				putchar(' ');
-				
-				if(m)
+				putchar(m / 10 + 48);
+				putchar(m % 10 + 48);
+
+				if ((n * 100 + m) != 9899)
 				{
-					putchar(48);
+					putchar(',');
+					putchar(' ');
 				}
-				
-				putchar(m);
-				if (n == 56 && m == 57)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
 			}
+
 			m++;
+
 		}
 
 		n++;
+
 	}
-
 	putchar('\n');
-
 	return (0);
 }
+
