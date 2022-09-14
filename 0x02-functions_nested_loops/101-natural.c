@@ -10,9 +10,8 @@
  */
 int main(void)
 {
-    naturalNumbers1024(10);
-    naturalNumbers1024(1024);
-    return (0);
+	naturalNumbers1024(1024);
+	return (0);
 }
 
 
