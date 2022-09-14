@@ -16,4 +16,5 @@
     void naturalNumbers1024(int n);
     void fibonacci102(void);
     void fibonacci103(void);
+    void fibonacci104(void);
 #endif
