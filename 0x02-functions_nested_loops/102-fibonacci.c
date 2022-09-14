@@ -22,13 +22,13 @@ int main(void)
  */
 void fibonacci102(void)
 {
-	int n = 50, i = 0, t1 = 1, t2 = 2, next;
+	long n = 50, i = 0, t1 = 1, t2 = 2, next;
 
-	printf("%d, %d", t1, t2);
+	printf("%ld, %ld", t1, t2);
 	while (i < (n - 2))
 	{
 		next = t1 + t2;
-		printf(", %d", next);
+		printf(", %ld", next);
 		t1 = t2;
 		t2 = next;
 		i++;
