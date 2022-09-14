@@ -9,12 +9,12 @@
  *@n: number
  * Return:   void
  */
-void naturalNumbers1024(int n)
+void naturalNumbers1024(void)
 {
 
 	int sum = 0, i = 1;
-
-	while (i < n)
+	
+	while (i < 1024)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
