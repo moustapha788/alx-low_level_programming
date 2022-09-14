@@ -17,7 +17,7 @@ int main(void)
 	_putchar('h');/*h=104*/
 	_putchar('a');/*a=65*/
 	_putchar('r');/*r=114*/
-	_putchar('\n');/*naw line*/
+	_putchar('\n');/*new line*/
 
 	return (0);
 }
