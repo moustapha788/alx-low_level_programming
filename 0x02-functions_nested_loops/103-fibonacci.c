@@ -15,21 +15,20 @@ int main(void)
 }
 
 /**
- * fibonacci102 -  prints the first 50 Fibonacci numbers,
- * starting with 1 and 2, followed by a new line.
+ * fibonacci103 - finds and prints the sum of the even-valued terms,
+ * followed by a new line.
  *
  * Return:   void
  */
 void fibonacci103(void)
 {
-	unsigned long i = 0, t1 = 1, t2 = 2, next=t2,sum=0;
+	unsigned long i = 0, t1 = 1, t2 = 2, next = t2, sum = t2;
 
-	
 	while (next < 4000000)
 	{
 
 		next = t1 + t2;
-		if(next % 2 == 0)
+		if (next % 2 == 0)
 		{
 			sum += next;
 		}
@@ -38,5 +37,5 @@ void fibonacci103(void)
 		i++;
 	}
 
-	printf("%lu\n",sum);
+	printf("%lu\n", sum);
 }
