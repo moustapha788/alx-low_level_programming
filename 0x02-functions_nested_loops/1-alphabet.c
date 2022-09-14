@@ -3,9 +3,10 @@
 /* more headers goes there */
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
+ * 	prints the alphabet, in lowercase, followed by a new line.
  *
- * Return: Always 0 (Success)
+ * Return: no return (Success)
  */
 void print_alphabet(void)
 {
