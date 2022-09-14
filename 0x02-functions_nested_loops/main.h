@@ -13,5 +13,5 @@
     int add(int, int);
     void print_to_98(int n);
     void printNumbers(int n);
-    void naturalNumbers1024(void);
+    void naturalNumbers1024(int n);
 #endif
