@@ -4,7 +4,7 @@
 
 /**
  * print_alphabet - Entry point
- * 	prints the alphabet, in lowercase, followed by a new line.
+ *	prints the alphabet, in lowercase, followed by a new line.
  *
  * Return: no return (Success)
  */
