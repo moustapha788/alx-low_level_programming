@@ -14,4 +14,5 @@
     void print_to_98(int n);
     void printNumbers(int n);
     void naturalNumbers1024(int n);
+    void fibonacci102(void);
 #endif
