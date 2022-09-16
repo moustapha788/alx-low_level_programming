@@ -46,7 +46,9 @@ void fizzBuzzTest(int n)
 			{
 				printf("Buzz");
 			}
-			printf(" ");
+
+			if (i != n)
+				printf(" ");
 		}
 		printf("\n");
 	}
