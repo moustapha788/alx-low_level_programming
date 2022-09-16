@@ -38,15 +38,17 @@ void fizzBuzzTest(int n)
 			{
 				printf("%d", i);
 			}
-			else if (i % 3 == 0)
-			{
-				printf("Fizz");
-			}
 			else
 			{
-				printf("Buzz");
+				if (i % 3 == 0)
+				{
+					printf("Fizz");				
+				}
+				if(i % 5 == 0)
+				{
+					printf("Buzz");
+				}
 			}
-
 			if (i != n)
 				printf(" ");
 		}

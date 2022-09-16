@@ -10,4 +10,5 @@
 	void print_diagonal(int n);
 	void print_square(int size);
 	void fizzBuzzTest(int n);
+	void print_triangle(int size);
 #endif
