@@ -4,9 +4,11 @@
 /* more headers goes there */
 
 /**
- * print_most_numbers - prints the numbers, from 0 to 9 execpt 2 and 4,
+ * reset_to_98 - takes a pointer to an int as parameter
+ * and updates the value it points to to 98.
  * followed by a new line.
  *
+ *@n : a pointer
  * Return: void
  */
 void reset_to_98(int *n)
