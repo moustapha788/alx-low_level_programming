@@ -11,4 +11,5 @@
 	void print_square(int size);
 	void fizzBuzzTest(int n);
 	void print_triangle(int size);
+	void isPrime(int n);
 #endif
