@@ -1,43 +1,51 @@
 #include "main.h"
 #include "2-strlen.c"
-#include <stdio.h>
-
 
 
 /* more headers goes there */
 
 /**
- * _strcpy - copies the string pointed to by src,
- * including the terminating null byte (\0),
- * to the buffer pointed to by dest
+ * _atoi - convert a string to an integer.
  *
- *@dest: destination
- *@src : source
+ *@s: a pointer to char
  *
- * Return: a pointer
+ * Return: integer
  */
 int _atoi(char *s)
 {
-	int number = 0;
-	int count = 0, pos =0, len = _strlen(s);
+	unsigned int number = 0, count = 0, len = _strlen(s);
+	int sign = 1;
+
 	if (len != 0)
 	{
 		while (count < len)
-		{	
-			if (_isdigit(s[count]) == 1)
-			{				
-				pos++;
+		{
+			if (_isdigit(s[count]))
+			{
+				number = (s[count] - 48) + number * 10;
+				if (s[count + 1] == ' ')
+					break;
+			}
+			else if (s[count] == '-')
+			{
+				sign *= -1;
 			}
 
 			count++;
-		}	
+		}
 	}
 
-	
-	return (number);
+	return (number * sign);
 }
 
-int _isdigit(int c)
+/**
+ * _isdigit - check if a char is digit or no
+ *
+ *@c: a char
+ *
+ * Return: integer
+ */
+int _isdigit(unsigned int c)
 {
 	return (c >= 48 && c <= 57);
 }

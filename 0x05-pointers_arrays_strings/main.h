@@ -12,5 +12,5 @@
 	void print_array(int *a, int n);
 	char *_strcpy(char *dest, char *src);
 	int _atoi(char *s);
-	int _isdigit(int c);
+	int _isdigit(unsigned int c);
 #endif
