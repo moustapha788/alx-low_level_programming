@@ -1,27 +1,28 @@
 #include "main.h"
-#include <stdio.h>
+#include "_putchar.c"
+#include "2-strlen.c"
+
 
 /* more headers goes there */
 
 /**
- * print_array - prints n elements of an array of integers,
- * followed by a new line.
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte (\0),
+ * to the buffer pointed to by dest
  *
- *@a: a pointer to an integer
- *@n : an integer
+ *@dest: destination
+ *@src : source
  *
- * Return: void
+ * Return: a pointer
  */
 char *_strcpy(char *dest, char *src)
 {
-	int count = 0;
+	int count = 0, len = _strlen(src);
 
-	while (count < n)
+	while (count < len)
 	{
-		printf("%d", *(a + count));
-		if (count < (n - 1))
-			printf(", ");
+		dest[count] = src[count];
 		count++;
 	}
-	printf("\n");
+	return (dest);
 }
