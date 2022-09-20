@@ -5,7 +5,7 @@
 /* more headers goes there */
 
 /**
- * puts2 - prints every other character of a string, 
+ * puts2 - prints every other character of a string,
  * starting with the first character, followed by a new line.
  *
  *@str: a pointer to a string
@@ -16,9 +16,9 @@ void puts2(char *str)
 
 	int len = _strlen(str), pos = 0;
 
-	if(len != 0)
+	if (len != 0)
 	{
-		while (pos < len )
+		while (pos < len)
 		{
 			if (pos % 2 == 0)
 			{
@@ -26,10 +26,6 @@ void puts2(char *str)
 			}
 			pos++;
 		}
-	}
-	else
-	{
-		_putchar('\0');
 	}
 	_putchar('\n');
 }
