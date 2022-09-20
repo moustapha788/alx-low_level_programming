@@ -13,7 +13,7 @@
 void puts_half(char *str)
 {
 
-	int len = _strlen(str), pos = (len - 1) / 2;
+	int len = _strlen(str), pos = (len + 1) / 2;
 
 	if (len != 0)
 	{
