@@ -9,4 +9,5 @@
 	char *string_toupper(char *);
 	char *cap_string(char *);
 	int _strlen(char *s);
+	int _islower(int c);
 #endif
