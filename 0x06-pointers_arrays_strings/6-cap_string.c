@@ -17,6 +17,10 @@ char *cap_string(char *s)
 
 	for (i = 0 ; s[i] != '\0' ; i++)
 	{
+		if (s[i] == '\t')
+		{
+			s[i] = ' ';
+		}
 		if (separator(s[i]) && !separator(s[i + 1]))
 		{
 			if (_islower(s[i + 1]))
