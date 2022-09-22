@@ -21,6 +21,7 @@ char *rot13(char *s)
 			if (starters[j] == s[i])
 			{
 				s[i] = substitutes[j];
+				break;
 			}
 		}
 	}
