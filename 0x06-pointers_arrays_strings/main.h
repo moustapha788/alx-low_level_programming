@@ -10,4 +10,5 @@
 	char *cap_string(char *);
 	int _strlen(char *s);
 	int _islower(int c);
+	int separator(char c);
 #endif

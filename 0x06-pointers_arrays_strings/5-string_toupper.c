@@ -1,5 +1,4 @@
 #include "main.h"
-#include "strlen.c"
 #include "islower.c"
 
 
@@ -9,7 +8,7 @@
  * string_toupper - changes all lowercase letters of a string to uppercase.
  *
  *@s: a pointer to a char
- * Return: void
+ * Return: a pointer to char
  */
 char *string_toupper(char *s)
 {
