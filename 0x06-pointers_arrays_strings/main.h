@@ -11,4 +11,5 @@
 	int _strlen(char *s);
 	int _islower(int c);
 	int separator(char c);
+	char *leet(char *s);
 #endif
