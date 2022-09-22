@@ -15,9 +15,13 @@ char *cap_string(char *s)
 {
 	int i;
 
+	if (_islower(s[0]))
+	{
+		s[0] -= 32;
+	}
 	for (i = 0 ; s[i] != '\0' ; i++)
 	{
-		if (separator(s[i]) && !separator(s[i + 1]))
+		if (separator(s[i]))
 		{
 			if (_islower(s[i + 1]))
 			{
